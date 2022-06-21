@@ -21,11 +21,16 @@ Periodically reads from one Time-Of-Flight module wired via I2C and publishes th
 Each reading comprises multiple read attempts, validated and then an average result is posted along with metadata to enable other analysis
 Calculates a 'gate raise' for a lifting gate that rises towards the fixed sensor mounting position above the moving parts (you can modify this for your setup)
 
-You will also need a file for your secrets strructure as:
+You will also need a separate secrets.h file for your secrets, structured as:
+
 #define SECRET_SSID "mySSID"		// replace MySSID with your WiFi network name
+
 #define SECRET_PASSWORD "myPassword"	// replace MyPassword with your WiFi password
 
-#define SERVER_HOSTNAME "myserver" //
-#define SERVER_PORT 8883 // Must be an integer
-#define SECRET_MQTT_USER "MyMQTTusername"      // MQTT access
-#define SECRET_MQTT_PASSWORD  "MyMQTTpassword"  // 
+#define SERVER_HOSTNAME "myserver" // replace e.g. with example.org
+
+#define SERVER_PORT nnnn // nnnn must be an integer e.g. 8883 WITHOUT quotes
+
+#define SECRET_MQTT_USER "MyMQTTusername"      // MQTT username
+
+#define SECRET_MQTT_PASSWORD  "MyMQTTpassword"  // MQTT password
