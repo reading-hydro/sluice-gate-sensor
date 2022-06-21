@@ -6,14 +6,22 @@ It is designed for continuous 5v power, however it can be easily adapted to batt
 
 Code is written in c++ for Arduino IDE
 If using Arduino IDE, ensure the sketch is uploaded and select board type of "ESP32 Dev Module"
-Libraries you will need include
+Libraries you will need include:
+
 WiFi by Arduino version 1.2.7 or later
+
 ArduinoJSON 6.9.14 or later
+
 ESP32Time by fbiego version 1.0.4 or later
+
 EspMQTT Client by Patrick Lapointe version 1.13.3 or later
+
 PubSubClient by Nick O'Leary version 2.8.0 or later
+
 VL53L0X by Pololu version 1.3.0 or later
+
 WifiESP by Bruno Portaluri version 2.2.2 or later (might not be needed here)
+
 
 Program summary:
 
